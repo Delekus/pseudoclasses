@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>TASK: css chess</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		table td {
+			width: 50px;
+			height: 50px;
+			border: 1px solid gray;
+		}
+
+		.chess {
+			margin: 50px auto;
+		}
+
+		/* Окрашивание в черный всех ЧЕТНЫХ столбцов во всех НЕЧЕТНЫХ строках 0,0,2,2 */
+		tr:nth-child(odd) td:nth-child(even) {
+			background-color: black;
+		}
+
+		/* Окрашивание в черный всех НЕЧЕТНЫХ столбцов во всех ЧЕТНЫХ строках 0,0,2,2*/
+		tr:nth-child(even) td:nth-child(odd) {
+			background-color: black;
+		}
+
+		/* Окрасить в зеленый каждый ЧЕТНЫЙ столбец ПЕРВОЙ строки */
+		tr:first-child td:nth-of-type(even) {
+			width: 25px;
+			height: 25px;
+			background-color: #98FB98;
+		}
+
+		/* Окрасить в зеленый каждый НЕЧЕТНЫЙ столбец ПЕРВОЙ строки */
+		tr:first-child td:nth-of-type(odd) {
+			width: 25px;
+			height: 25px;
+			background-color: #98FB98;
+		}
+
+		/* Окрасить в зеленый каждый ЧЕТНЫЙ столбец ПОСЛЕДНЕЙ строки */
+		tr:last-child td:nth-of-type(even) {
+			width: 25px;
+			height: 25px;
+			background-color: #98FB98;
+		}
+
+		/* Окрасить в зеленый каждый НЕЧЕТНЫЙ столбец ПОСЛЕДНЕЙ строки */
+		tr:last-child td:nth-of-type(odd) {
+			width: 25px;
+			height: 25px;
+			background-color: #98FB98;
+		}
+
+		/* Окрасить в зеленый ПЕРВЫЙ столбец в каждой ЧЕТНОЙ строке */
+		tr:nth-of-type(even) td:first-child {
+			width: 25px;
+			height: 25px;
+			background-color: #98FB98;
+		}
+
+		/* Окрасить в зеленый ПЕРВЫЙ столбец в каждой НЕЧЕТНОЙ строке */
+		tr:nth-of-type(odd) td:first-child {
+			width: 25px;
+			height: 25px;
+			background-color: #98FB98;
+		}
+
+		/* Окрасить в зеленый ПОСЛЕДНИЙ столбец в каждой ЧЕТНОЙ строке */
+		tr:nth-of-type(even) td:last-child {
+			width: 25px;
+			height: 25px;
+			background-color: #98FB98;
+		}
+
+		/* Окрасить в зеленый ПОСЛЕДНИЙ столбец в каждой НЕЧЕТНОЙ строке */
+		tr:nth-of-type(odd) td:last-child {
+			width: 25px;
+			height: 25px;
+			background-color: #98FB98;
+		}
+
+	</style>
+</head>
+
+<body>
+	<table class="chess">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
